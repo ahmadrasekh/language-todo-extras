@@ -1,0 +1,19 @@
+# If this is your first time writing a language grammar, check out:
+#   - https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/
+
+'scopeName': 'source.todo-extras'
+'name': 'TodoExtras'
+'injectionSelector': 'comment, text.plain'
+'patterns': [
+  {
+    'match': '(?<!\\w)@?(INFO|IDEA|HACK|TASK|NOTE|TODO|FIXME|DEBUG|REMOVE|OPTIMISE|REVIEW|REFACTOR|UNDO|CLEANUP|CHANGE|CHECK|VERIFY|INVARIANT|PRE-CONDITION|POST-CONDITION|ASSUMPTION|ASSERTION|CHECKED|VERIFIED|DONE|MOVED|FIXED|REVISED|UNREACHED|DEPRECATED|REDUNDANT|BROKEN|BUG|ERROR|WARNING)\\b'
+    'name': 'storage.type.class.${1:/downcase}'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'markup.underline.link.radar'
+    'match': '<(ra?dar:/(?:/problems?|)/(?:[&0-9]+))>'
+    'name': 'storage.type.class.radar'
+  }
+]

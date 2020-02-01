@@ -1,0 +1,18 @@
+{
+  "name": "language-todo-extras",
+  "version": "0.0.0",
+  "description": "Ahmad's custom TODOs",
+  "keywords": [
+    "language",
+    "grammar",
+    "todo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadrasekh/language-todo-extras.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
