@@ -1,4 +1,4 @@
-# ExtraTodos language package
+# TodoExtras language package
 
 Extra syntax highlighting for TODOs. Each category is colour coded as below:
 
